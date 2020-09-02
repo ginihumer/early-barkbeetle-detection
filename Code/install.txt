@@ -1,0 +1,39 @@
+pip install --upgrade pip
+
+pip install sklearn
+
+pip install keras
+pip install np_utils
+
+pip install tensorflow
+pip install Pillow
+
+
+# for segmentation:
+pip install keras-segmentation
+
+
+# for visualization
+pip install pydotplus 
+ - install GraphViz: http://www.graphviz.org/download/
+ - add GraphViz "bin"-Folder to "PATH": "C:\Program Files (x86)\Graphviz2.38\bin"
+ - from: https://stackoverflow.com/questions/47188756/keras-plot-model-tells-me-to-install-pydot:
+ - change "import pydot" to "import pydotplus as pydot" in "C:\Users\Gini\Anaconda3\envs\masterarbeit 2\Lib\site-packages\keras\utils\vis_utils.py"
+ 
+pip install imageio
+
+pip install scipy==1.1.0 --user
+pip install keras-vis
+
+pip install opencv-python
+
+
+------ CUDA
+Following instructions on: https://medium.com/@ab9.bhatia/set-up-gpu-accelerated-tensorflow-keras-on-windows-10-with-anaconda-e71bfa9506d1
+- https://developer.nvidia.com/cuda-downloads?target_os=Windows&target_arch=x86_64
+-? https://developer.nvidia.com/rdp/cudnn-archive#a-collapse714-9
+
+New Anaconda environment:
+- conda create --name tensorflow --clone root
+- activate tensorflow # aktiviert die anaconda environment
+- pip install --ignore-installed --upgrade tensorflow-gpu
